@@ -21,7 +21,7 @@ class Tavin:
         return self.app
 
     def add_url_rule(self, path, route):
-        self.app.add_url_rule(path, 'route', route)
+        self.app.add_url_rule(path, path, route)
 
     def run(self):
         self.api.set_window(self.window)
