@@ -1,0 +1,10 @@
+README.md
+setup.py
+Tavin/__init__.py
+Tavin.egg-info/LICENSE.txt
+Tavin.egg-info/PKG-INFO
+Tavin.egg-info/README.md
+Tavin.egg-info/SOURCES.txt
+Tavin.egg-info/dependency_links.txt
+Tavin.egg-info/requires.txt
+Tavin.egg-info/top_level.txt
