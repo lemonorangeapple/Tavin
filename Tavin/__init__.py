@@ -12,10 +12,10 @@ class webview_api:
         self._window.destroy()
 
 class Tavin:
-    def __init__(self, env, **args):
+    def __init__(self, env):
         self.app = Flask(env)
         self.api = webview_api()
-        self.window = webview.create_window(url = self.app, js_api = self.api, **args)
+        self.window = webview.create_window(url = self.app, js_api = self.api)
         self.route = self.app.route
 
     def get_app(self):
