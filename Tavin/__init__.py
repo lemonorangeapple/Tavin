@@ -1,5 +1,5 @@
 import webview
-from flask import Flask, render_template
+from flask import *
 
 class webview_api:
     def __init__(self):
@@ -12,10 +12,11 @@ class webview_api:
         self._window.destroy()
 
 class Tavin:
-    def __init__(self, **args):
-        self.app = Flask(__name__)
+    def __init__(self, env, **args):
+        self.app = Flask(env)
         self.api = webview_api()
         self.window = webview.create_window(url = self.app, js_api = self.api, **args)
+        self.route = self.app.route
 
     def get_app(self):
         return self.app
@@ -26,4 +27,3 @@ class Tavin:
     def run(self):
         self.api.set_window(self.window)
         webview.start()
-    
