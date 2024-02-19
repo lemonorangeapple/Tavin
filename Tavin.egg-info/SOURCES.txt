@@ -8,3 +8,4 @@ Tavin.egg-info/SOURCES.txt
 Tavin.egg-info/dependency_links.txt
 Tavin.egg-info/requires.txt
 Tavin.egg-info/top_level.txt
+test/test.py
