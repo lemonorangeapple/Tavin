@@ -4,6 +4,7 @@ from flask import *
 class Tavin:
     def __init__(self, title, env, **args):
         self.app = Flask(env)
+        self.api = None
         self.window = webview.create_window(url = self.app, title = title, **args)
 
     def get_app(self):
