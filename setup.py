@@ -3,7 +3,7 @@ with open('README.md', 'r', encoding = 'utf-8') as f:
     long_description = f.read()
 setup(
     name = 'Tavin',
-    version = '1.1.1',
+    version = '1.1.2',
     description = 'A concise application framework.',
     long_description = long_description,
     long_description_content_type = 'text/markdown',

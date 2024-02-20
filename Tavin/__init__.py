@@ -2,10 +2,9 @@ import webview
 from flask import *
 
 class Tavin:
-    def __init__(self, env):
+    def __init__(self, env, **args):
         self.app = Flask(env)
-        self.api = webview_api()
-        self.window = webview.create_window(url = self.app)
+        self.window = webview.create_window(url = self.app, **args)
 
     def get_app(self):
         return self.app
