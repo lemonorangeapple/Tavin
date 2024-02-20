@@ -1,5 +1,8 @@
 import webview
 from flask import *
+import os
+import sys
+os.chdir(sys._MEIPASS if sys._MEIPASS else os.path.abspath("."))
 
 class Tavin:
     def __init__(self, env):
